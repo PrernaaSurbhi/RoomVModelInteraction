@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SleepQualityFragment">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/how_was_hour_sleep"
+        android:textSize="@dimen/title_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/quality_zero_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/quality_zero_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="349dp"
+        android:layout_marginBottom="121dp"
+        android:src="@drawable/ic_sleep_0"
+        app:layout_constraintBottom_toTopOf="@+id/quality_two_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_text" />
+
+    <ImageView
+        android:id="@+id/quality_one_image"
+        android:layout_width="44dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="87dp"
+        android:src="@drawable/ic_sleep_1"
+        app:layout_constraintBottom_toTopOf="@+id/quality_four_image"
+        app:layout_constraintEnd_toStartOf="@+id/quality_five_image"
+        app:layout_constraintStart_toEndOf="@+id/quality_zero_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <ImageView
+        android:id="@+id/quality_two_image"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="9dp"
+        android:src="@drawable/ic_sleep_3"
+        app:layout_constraintEnd_toStartOf="@+id/quality_three_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quality_zero_image" />
+
+    <ImageView
+        android:id="@+id/quality_three_image"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="398dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="289dp"
+        android:src="@drawable/ic_sleep_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/quality_four_image"
+        app:layout_constraintStart_toEndOf="@+id/quality_two_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/quality_four_image"
+        android:layout_width="59dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="311dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="308dp"
+        android:src="@drawable/ic_sleep_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/quality_five_image"
+        android:layout_width="57dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="125dp"
+        android:src="@drawable/ic_sleep_2"
+        app:layout_constraintBottom_toTopOf="@+id/quality_four_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quality_one_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
