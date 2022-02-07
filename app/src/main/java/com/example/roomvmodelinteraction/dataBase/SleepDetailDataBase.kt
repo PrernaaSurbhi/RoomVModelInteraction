@@ -37,6 +37,11 @@ abstract class SleepDetailDataBase : RoomDatabase() {
         }
 
 
+        fun destroyInstance() {
+            INSTANCE = null
+        }
+
+
     }
 
 }

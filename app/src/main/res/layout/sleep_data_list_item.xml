@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/start_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="35dp"
+        android:textColor="@color/black"
+        android:text="Start"
+        app:layout_constraintEnd_toStartOf="@+id/start_detail"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintBaseline_toBaselineOf="@+id/start_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/start_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="198dp"
+        android:text=" shshshjghjjhh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/start_tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/endTv"
+        android:layout_width="30dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="42dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="70dp"
+        android:text="End"
+        app:layout_constraintEnd_toStartOf="@+id/end_tv_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_tv" />
+
+    <TextView
+        android:id="@+id/end_tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="650dp"
+        android:text="end tv deatil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_detail" />
+
+    <TextView
+        android:id="@+id/quality_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="59dp"
+        android:text="Quality"
+        app:layout_constraintEnd_toStartOf="@+id/quality_tv_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endTv" />
+
+    <TextView
+        android:id="@+id/quality_tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="174dp"
+        android:text="quality_tv_detil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/end_tv_detail" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="23dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="572dp"
+        android:text="Hours:Minutes:Seconds "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/time_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quality_tv" />
+
+    <TextView
+        android:id="@+id/time_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="571dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quality_tv_detail" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
